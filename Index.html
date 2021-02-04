@@ -3,11 +3,11 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Cell Towers in Washington (2010)</title>
+  <title>Discover US Airports</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/b21ada3fc8.js" crossorigin="anonymous"></script>
   <style>
 
@@ -87,7 +87,7 @@
       // The content of the popup window is the value of `feature.properties.company`
       onEachFeature: function (feature, layer) {
           layer.bindPopup(feature.properties.AIRPT_NAME);
-          return feature.properties.STATE;
+          return feature.properties.CNTL_TWR;
       },
       pointToLayer: function (feature, latlng) {
           var id = 0;
